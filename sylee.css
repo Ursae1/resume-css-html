@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.layout {
+  width: 794px;
+  height: 1123px;
+  background: white;
+  display: grid;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-template-areas:
+    "header main"
+    "header main"
+    "header main";
+}
+header {
+  position: relative;
+  background-color: #f1ece6;
+  display: grid;
+  place-items: center;
+  grid-area: header;
+}
+
+.profile_image {
+  position: absolute;
+  top: 20px;
+  user-select: none;
+}
+
+img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle {
+  position: absolute;
+  top: 17px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #214493;
+}
+
+/* profile info */
+
+.profile_info {
+  width: 200px;
+  padding: 20px;
+  position: relative;
+  bottom: 120px;
+}
+
+.profile_info h2 {
+  font-size: 23px;
+  color: #5d5a5a;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.profile_info div {
+  font-size: 0.8rem;
+  color: #5d5a5a;
+  position: absolute;
+  left: 3px;
+}
+
+.profile_info p {
+  height: 26px;
+  font-size: 1rem;
+}
+
+.profile_info p span {
+  font-weight: 600;
+}
+
+/* contattti */
+.contact_info {
+  width: 180px;
+  display: flex;
+  justify-self: start;
+  position: relative;
+  bottom: 520px;
+  left: 10px;
+}
+
+.contact {
+  position: absolute;
+  bottom: 0;
+  font-size: 17px;
+  color: #5d5a5a;
+}
+
+.fa-location-dot {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+}
+
+.contact_info a {
+  position: absolute;
+  left: 30px;
+}
+
+.address {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  font-size: 0.9rem;
+  color: #5d5a5a;
+}
+
+.email-address {
+  width: 230px;
+  display: flex;
+  position: absolute;
+  top: 90px;
+}
+
+.fa-envelope {
+  font-size: 20px;
+}
+
+a {
+  font-size: 0.9rem;
+  color: #5d5a5a;
+}
+
+.phone-number {
+  width: 150px;
+  display: flex;
+  position: absolute;
+  top: 40px;
+}
+
+/* main */
+
+main {
+  background-color: white;
+  grid-area: main;
+}
+
+.main_info {
+  padding: 20px 10px;
+}
+
+/* esperienza_lavorativa */
+
+.esperienza_lavorativa h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #5d5a5a;
+}
+
+.esperienza {
+  width: 200px;
+  padding: 30px;
+  position: relative;
+  top: 10px;
+}
+
+.esperienza h4 {
+  position: relative;
+  font-weight: 600;
+  height: 40px;
+  font-size: 0.9rem;
+  color: #5d5a5a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.esperienza span {
+  font-size: 0.7rem;
+  color: #5d5a5a;
+}
+
+.esperienza h4:last-child {
+  position: relative;
+}
+
+.esperienza h4:last-child span {
+  position: absolute;
+  left: 155px;
+}
+
+/* timeline */
+
+.esperienza h4::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #214493;
+  left: -14.5px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.timeline {
+  height: 85px;
+  position: absolute;
+  top: 35px;
+  left: 19.5px;
+  border: 3px solid #214493;
+  border-width: 0 0 0px 1.5px;
+}
+
+.competenze h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #5d5a5a;
+}
+
+.competenze p {
+  font-weight: 400;
+  padding: 6px;
+  font-size: 0.7rem;
+  color: #5d5a5a;
+}
+
+.competenze p span {
+  font-weight: 300;
+  user-select: none;
+}
+
+/* COMPETENZE_LINGUISTICHE */
+
+.COMPETENZE_LINGUISTICHE {
+  padding-top: 10px;
+}
+
+.COMPETENZE {
+  position: relative;
+  width: 220px;
+  padding: 30px 30px 0px 30px;
+  bottom: 20px;
+}
+
+.COMPETENZE span {
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+  color: #5d5a5a;
+}
+
+.COMPETENZE_LINGUISTICHE h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #5d5a5a;
+}
+
+.COMPETENZE h5 {
+  position: relative;
+  padding-top: 15px;
+  font-weight: 600;
+  height: 40px;
+  font-size: 0.9rem;
+  color: #5d5a5a;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* timeline_lingui */
+
+.timeline_lingui {
+  height: 110px;
+  position: absolute;
+  top: 54px;
+  left: 19.5px;
+  border: 3px solid #214493;
+  border-width: 0 0 0 1.5px;
+}
+
+.COMPETENZE h5::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #214493;
+  left: -14.5px;
+  top: 18px;
+  border-radius: 50%;
+}
+
+/* drivers-hobby */
+
+.drivers-hobby {
+  position: relative;
+  padding-top: 15px;
+}
+
+.drivers {
+  padding-bottom: 10px;
+}
+
+.drivers-hobby h3 {
+  padding-bottom: 5px;
+  color: #5d5a5a;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.drivers-hobby p {
+  font-weight: 400;
+  padding: 6px;
+  font-size: 1rem;
+  color: #5d5a5a;
+}
+
+.hobby h5 {
+  color: #5d5a5a;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.hobby p {
+  font-weight: 400;
+  padding: 6px;
+  font-size: 0.8rem;
+  color: #5d5a5a;
+}
